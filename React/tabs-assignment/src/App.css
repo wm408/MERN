@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+.displayContainer {
+  border: 1px solid grey;
+  height: 250px;
+  width: 50%;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.tab {
+  margin-right:10px;
+  padding: 15px 40px 15px 40px;
+}
+
+.tabPicked {
+  color: white;
+  background-color: black;
+  border: 1px solid grey;
+}
+
+.tabNotPicked {
+  color: black;
+  background-color: white;
+  border: 1px solid grey;
+}
