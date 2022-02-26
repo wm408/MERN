@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  margin: 30px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 8px 8px auto;
+}
+
+button {
+  margin: 8px 8px auto;
+}
