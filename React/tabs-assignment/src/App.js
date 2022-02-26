@@ -31,7 +31,10 @@ function App() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
-      <TabOutput tabArr={tabArr} activeTab={activeTab} />
+      <TabOutput 
+        tabArr={tabArr} 
+        activeTab={activeTab} 
+      />
     </div>
   );
 }
