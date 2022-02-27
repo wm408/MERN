@@ -1,0 +1,57 @@
+.App {
+  margin-top: 30px;
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.list {
+  display: flex;
+  margin: 15px 0px 15px 0px;
+  justify-content: left;
+  align-items: center;
+}
+
+.checkBoxMargin {
+  margin-right: 20px;
+  margin-left: 6px;
+}
+
+.delButton {
+  padding: 12px 22px;
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+}
+
+.addButton {
+  display: flex;
+  padding: 12px 22px;
+  background-color: blue;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.listText {
+  font-size: 22px;
+}
+
+.itemInput {
+  height: 45px;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+
+.taskCompleted {
+  text-decoration: line-through;
+}
+
+.taskNotCompleted {
+  text-decoration: none;
+}
