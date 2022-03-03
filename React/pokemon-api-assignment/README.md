@@ -1,0 +1,1 @@
+# Pokemon API assignment using Fetch, and map to iterate through 807 pokemon, displayed as an unordered list.
