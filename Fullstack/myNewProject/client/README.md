@@ -1,1 +1,1 @@
-# Example Full Stack Project
+# Product Manager (part 1) - Full Stack Project
