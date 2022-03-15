@@ -1,1 +1,1 @@
-# Product Manager (Part 1) - Full Stack Assignment
+# Product Manager (Part II) - Full Stack Assignment
