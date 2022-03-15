@@ -14,5 +14,5 @@ require("./config/mongoose.config")
 
 require("./routes/product.routes")(app); // here we call the exported routes from the routes.js file.
 
-app.listen(8000, ()=>console.log('You are connected to port 8000'));;
+app.listen(8000, ()=>console.log('You are connected to port 8000'));
 

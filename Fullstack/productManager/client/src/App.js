@@ -1,14 +1,24 @@
 import './App.css';
 import React from 'react';
 // import axios from 'axios'; // remember to: 'npm i axios' in client folder.
-import ProductManager from './components/ProductManager';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import ProductManager from './components/ProductManager';
+// import ProductList from './components/ProductList';
+import Main from './views/Main';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
+  // const [productTitle, setProductTitle] = useState([]);
 
   return (
-    <div className="App">
-      <ProductManager />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+      <Routes>
+        <Route path="/" element={<Main />}/>
+        <Route path="/api/products/:id" element={<ProductDetail/>}/> 
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

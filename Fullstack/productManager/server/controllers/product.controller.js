@@ -32,18 +32,18 @@ module.exports = { // these exports will be called in the routes.
             })
     },
 
+    findOneProduct: (req, res)=>{
+        Product.findOne({_id: req.params.id}) //technically 'id' can be anything. It just needs to match our routes.
+            .then((oneProduct)=>{
+                console.log(oneProduct);
+                res.json(oneProduct);
+            })
+            .catch((err)=>{
+                console.log('Find One Product Failed');
+                res.json({message: 'Something went wrong in find one product', error: err});
+            })
+    },
 }
-    // findOneProduct: (req, res)=>{
-    //     Product.findOne({_id: req.params.id}) //technically 'id' can be anything. It just needs to match our routes.
-    //         .then((oneProduct)=>{
-    //             console.log(oneProduct);
-    //             res.json(oneProduct);
-    //         })
-    //         .catch((err)=>{
-    //             console.log('Find One Product Failed');
-    //             res.json({message: 'Something went wrong in find one product', error: err});
-    //         })
-    // },
 
     // deleteOneProduct: (req, res)=>{
     //     Product.deleteOne({_id: req.params.id})
