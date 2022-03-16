@@ -3,8 +3,14 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 const ProductList = (props) => {
-    const {products, setProducts} = props; //lifted state comes in as props from Main.
-    
+    const {products, setProducts, deleteInDom} = props; //lifted state comes in as props from Main.
+    const deleteProduct = (productId) => {
+        axios.delete(`http://localhost:8000/api/products/${productId}`)
+            .then(res => {
+                deleteInDom(productId)
+            })
+            .catch(err => console.log(err))
+    }
     useEffect(()=>{
         axios.get("http://localhost:8000/api/products")
         .then((res)=>{
@@ -25,9 +31,16 @@ const ProductList = (props) => {
                 <div key={index}>
                     <p></p>
                     <Link to={`/api/products/${product._id}`}>{product.title}</Link>
+                    ||
+                    <Link to={`/api/products/edit/${product._id}`}>Edit</Link>
+                    ||
+                    <button onClick={(e)=>{deleteProduct(product._id)}}>Delete</button>
                 </div>
                 )})
             }
+            <br />
+            <br />
+            <br />
         </div>
     )
 }

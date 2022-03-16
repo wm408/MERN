@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import ProductList from './components/ProductList';
 import Main from './views/Main';
 import ProductDetail from './components/ProductDetail';
+import ProductUpdate from './components/ProductUpdate';
 
 function App() {
   // const [productTitle, setProductTitle] = useState([]);
@@ -15,8 +16,9 @@ function App() {
       <div className="App">
       <Routes>
         <Route path="/" element={<Main />}/>
-        <Route path="/api/products/:id" element={<ProductDetail/>}/> 
-        </Routes>
+        <Route path="/api/products/:id" element={<ProductDetail />}/>
+        <Route path="/api/products/edit/:id" element={<ProductUpdate />}/> 
+      </Routes>
       </div>
     </BrowserRouter>
   );

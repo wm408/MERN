@@ -4,6 +4,8 @@ import ProductList from "../components/ProductList";
 
 const Main = (props) => {
     const [products, setProducts] = useState([]); //lifted state to be sent down to ProductManager and ProductList
+    const deleteInDom = (productId) => {
+        setProducts(products.filter(product => product._id !== productId));}
     return (
         <div>
             <ProductManager 
@@ -14,6 +16,7 @@ const Main = (props) => {
             <ProductList 
             products={products}
             setProducts={setProducts}
+            deleteInDom={deleteInDom}
             />
         </div>
     );
