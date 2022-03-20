@@ -1,0 +1,14 @@
+.App {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  margin-top: 20px;
+}
+
+.purple-text {
+  color: #7e2df8;
+  font-weight: 600;
+}
