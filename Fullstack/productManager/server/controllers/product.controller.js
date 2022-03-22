@@ -43,7 +43,7 @@ const findOneProduct = (req, res)=>{
 }
 
 const updateProduct = (req, res)=>{
-    Product.findOneAndUpdate({_id: req.params.id}, // this is used to look up the particular product, 
+    Product.findByIdAndUpdate({_id: req.params.id}, // this is used to look up the particular product, 
         req.body,  // this line is actually used to do the update. req.body is an argument, we are taking in the provided information here.
         {new: true, runValidators: true} // this line will always be the same. Note, by default the validators only run on post request. 'runValidators' here ensures that it also happens on update.
         )

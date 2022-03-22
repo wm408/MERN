@@ -10,12 +10,15 @@ const ProductSchema = new mongoose.Schema({
     },
     price: {
         type: Number,
+        required: [true, "you forgot the price!"],
+        min: [10, "need to be => 10"],
+        max: [200, "need to be <= 200"]
     },
     description: {
         type: String,
         //our validations are defined down here.
         //most take two values: the Criteria and Message
-        required: [true, "You must have a product title"],
+        required: [true, "You are missing the description."],
         maxLength: [400, "The description's length can be no more than 30 characters!"] // specific maxLength to a string. Alternatively: minLength for a string. max/min are for number types.
     }
 //_id is created every time we create a new document.
