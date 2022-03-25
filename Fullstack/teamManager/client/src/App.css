@@ -1,0 +1,103 @@
+.App {
+  text-align: left;
+  width: 850px;
+  margin: 0 auto;
+}
+.header-margin {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+.header-text {
+  font-size: 30px;
+}
+.main-box {
+  border: 2px solid black;
+  padding: 25px;
+}
+.table-heading {
+  background-color: rgb(192, 191, 191);
+}
+.table-box {
+  border: 2px solid black;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+#delete-button {
+  text-align: center!important;
+  margin: 0 auto;
+}
+
+td > button {
+  background-color: red;
+  width: 100px;
+  box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.player-box {
+  border: 2px solid black;
+  margin-top: 28px;
+}
+.input-row {
+  display: flex;
+}
+
+.input-label {
+  font-weight: 500;
+}
+
+.input-field {
+  width: 400px;
+}
+
+#table-child {
+  background-color: #fff;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.td-text-right {
+  text-align: right;
+}
+
+.left-pad {
+  padding-left: 30px;
+}
+
+.submit-button {
+  float: right;
+    width: 250px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: green;
+    padding: 5px;
+    color: #fff;
+    font-weight: 600;
+    -webkit-box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.red-text {
+  color: red;
+}
