@@ -24,7 +24,6 @@ class User {	// declare a class and give it name User
     }
 }
 
-// const guido = new User("Guido van Rossum", "guido@python.com");
 const will = new User("Will Smith", "wsmith@gmail.com");
 const chris = new User("Chris Rock", "crock@gmail.com");
 const jada = new User("Jada Pinkett", "jpinkett@gmail.com");
