@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+}
